@@ -39,13 +39,13 @@
     - Description: Updates an existing cyber asset
     - Parameters:
         - id (required): Cyber asset ID
-    Request body:
+    - Request body:
         - Any combination of the following fields
             - name
             - type
             - serial_number
             - operating_system
-    Response:
+    - Response:
         - message (string): Success message indicating the asset was updated
 - DELETE /assets/:id
     - Description: Deletes a cyber asset

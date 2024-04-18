@@ -47,6 +47,7 @@ const router = app => {
         try {
             const asset = await db("SELECT * FROM cyber_assets WHERE id = ?", [id]);
 
+            // Check if asset exists
             if (asset.length === 0) {
                 res.status(404).json({ message: "Asset not found" });
             } else {
